@@ -149,13 +149,21 @@ body::-webkit-scrollbar{
 .first_products{
     display: flex;
 }
+.left{
+    display: flex;
+}
+.left > img{
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+}
 .right{
     display: flex;
     flex-wrap: wrap;
 }
 .right > div > img{
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
     object-fit: cover;
 }
 .f_p_i{
