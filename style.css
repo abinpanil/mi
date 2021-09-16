@@ -90,7 +90,7 @@ body::-webkit-scrollbar{
 }
 .searchbar{
     margin-left: auto;
-    padding: 18px 22px;
+    padding: 5px 22px;
 }
 .secondary_navbar_text{
     text-decoration: none;
@@ -255,4 +255,13 @@ footer{
 }
 .customer-service-time{
     padding-bottom: 25px;
+}
+.searchbar input{
+    width: 25vh;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #212121 ;
+    outline: none;
+   padding: 8px;
+   
 }
