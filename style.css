@@ -1,0 +1,142 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url(font/proxima-nova-thin.woff) format("woff");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(font/proxima-nova-light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(font/proxima-nova-regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(font/proxima-nova-semibold.woff) format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(font/proxima-nova-bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+body{
+    font-family: ProximaNova,Arial,Sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #757575;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.primary_navbar{
+    display: flex;
+    background-color: #212121;
+    padding: 7px 150px;
+}
+.navbar_text{
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-right: 1px solid #424242;
+    padding: 0 15px;
+}
+.navbar_text:hover{
+    color: #ebe9e9;;
+}
+.primary_navbar_right{
+    margin-left: auto;
+
+}
+.primary_navbar .primary_navbar_left .navbar_text:last-child{
+    border: 0;
+}
+.primary_navbar .primary_navbar_right .navbar_text:last-child{
+    border: 0;
+}
+.secondary_navbar{
+    display: flex;
+    padding: 7px 162px;
+    background-color: transparent;
+    position: absolute;
+    top: 43px;
+}
+.mi_logo{
+    width: 60px;
+}
+.mi_logo:hover{
+    transform: scale(1.05);
+}
+.searchbar{
+    margin-left: auto;
+    padding: 18px 22px;
+}
+.secondary_navbar_text{
+    text-decoration: none;
+    color: #616161;
+    font-size: 14px;
+    padding: 18px 22px;
+}
+.secondary_navbar_text:hover{
+    color: #fd4900
+}
+.contents{
+    display: flex;
+}
+.wrapping_banner{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.wrapping_banner::-webkit-scrollbar{
+    display: none;
+}
+.wrapping_banner > div > img{
+    width: 100vw;
+    height: 80vh;
+    scroll-snap-align: start;
+
+}
+.box{
+    padding: 7px 150px;
+}
+.first_poster{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.offer_poster:hover{
+    transition: box-shadow .2s linear;
+}
+.offer_poster:hover{
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 25%);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
