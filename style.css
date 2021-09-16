@@ -120,7 +120,7 @@ body::-webkit-scrollbar{
 
 }
 .box{
-    padding: 7px 150px;
+    padding: 1vh 9vw;
 }
 .first_poster{
     display: flex;
