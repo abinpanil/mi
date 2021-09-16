@@ -63,7 +63,7 @@ body::-webkit-scrollbar{
     padding: 0 15px;
 }
 .navbar_text:hover{
-    color: #ebe9e9;;
+    color: #ebe9e9;
 }
 .primary_navbar_right{
     margin-left: auto;
@@ -204,4 +204,55 @@ body::-webkit-scrollbar{
 }
 #sub_head:hover{
     color: #ff6700;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+}
+.service strong{
+    font-weight: 600;
+    color: #424242;
+    cursor: pointer;
+}
+footer{
+    background-color: #212121;
+    padding: 40px 0 60px;
+    color: #b0b0b0;
+}
+.footer_content{
+    display: flex;
+    line-height: 32px;
+    justify-content: space-between;
+}
+.sec a{
+   text-decoration: none;
+   color: #b0b0b0;
+   font-weight: 400;
+    font-size: 14px;
+}
+.footer_head{
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 600;
+}
+.sec a:hover{
+    color: #ebe9e9;
+}
+.button{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    text-decoration: none;
+    border-color: #f5f5f5;
+    color: #f5f5f5;
+    padding: 13px 45px;
+    border: solid 1px;
+}
+.button:hover{
+    background-color: #f5f5f5;
+    color: #212121;
+}
+.customer-service-time{
+    padding-bottom: 25px;
 }
