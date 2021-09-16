@@ -146,6 +146,7 @@ body::-webkit-scrollbar{
     font-weight: 300;
     text-transform: uppercase;
     padding: 13vh;
+    padding-bottom: 7vh;
 }
 .heading_text{
     text-decoration: none;
@@ -187,5 +188,20 @@ body::-webkit-scrollbar{
 .sub{
     display: flex;
     justify-content: center;
+    
 }
-.sub >d
+.sub_head{
+    padding-right: 20px;
+    padding-left: 20px;
+  
+}
+#sub_head{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    cursor: pointer;
+}
+#sub_head:hover{
+    color: #ff6700;
+}
