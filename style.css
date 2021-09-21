@@ -36,6 +36,7 @@ body{
     font-family: ProximaNova,Arial,Sans-serif;
     font-weight: 400;
     font-size: 14px;
+    overflow-x: hidden;
     line-height: 1.5;
     color: #757575;
     background-color: #f5f5f5;
@@ -75,12 +76,28 @@ body::-webkit-scrollbar{
 .primary_navbar .primary_navbar_right .navbar_text:last-child{
     border: 0;
 }
+/* .secondary_navbar{
+    display: flex;
+    padding: 7px 150px;
+} */
+.space{
+    width: 44px;
+}
 .secondary_navbar{
     display: flex;
     padding: 7px 162px;
-    background-color: transparent;
+    /* background-color: transparent; */
     position: absolute;
-    top: 43px;
+    top: 35px;
+    align-items: center;
+    width: 100vw;
+}
+.snav_text p{
+    font-weight: 600;
+    cursor: pointer;
+}
+.secondary_navbar .drop_down .sub_drop img{
+    width: 200px;
 }
 .mi_logo{
     width: 60px;
@@ -98,11 +115,23 @@ body::-webkit-scrollbar{
     font-size: 14px;
     padding: 18px 22px;
 }
-.secondary_navbar_text:hover{
+.snav_text p:hover{
     color: #fd4900
 }
+.sub_drop p{
+    margin-bottom: 0px;
+    color: #424242;
+    font-size: 16px;
+}
+.sub_drop span{
+    color: #fd4900
+}
+.snav_text p:hover .secondary_navbar{
+    background: #fff;
+}
 .contents{
-    display: flex;
+   display: flex;
+
 }
 .wrapping_banner{
     display: flex;
@@ -249,6 +278,43 @@ footer{
     padding: 13px 45px;
     border: solid 1px;
 }
+.drop_inner{
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.sub_drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.snav_text:hover .secondary_navbar{
+    background: #fff;
+}
+.snav_text:hover .drop_down{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.drop_down{
+    border-top: 1px solid #b0b0b0;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    align-items: center;
+    align-content: space-between;
+    right: 0;
+    box-sizing: border-box;
+    margin-top: 16px;
+    box-shadow: 0 2px 30px 0 rgb(0 0 0 / 20%);
+    visibility: hidden;
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+}
 .button:hover{
     background-color: #f5f5f5;
     color: #212121;
@@ -257,7 +323,8 @@ footer{
     padding-bottom: 25px;
 }
 .searchbar input{
-    width: 25vh;
+    cursor: pointer;
+    width: 11vw;
     background: transparent;
     border: none;
     border-bottom: solid 1px #212121 ;
